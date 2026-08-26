@@ -68,148 +68,151 @@
 // }
 // // ==================== CHECKPOINT 4 - COMMENTED ====================
 
-// import 'package:flutter/material.dart'; 
- 
-// void main() { 
-//   runApp(const MyApp()); 
-// } 
- 
-// class MyApp extends StatelessWidget { 
-//   const MyApp({super.key}); 
-//     @override 
-//   Widget build(BuildContext context) { 
-//     return MaterialApp( 
-//       debugShowCheckedModeBanner: false, 
-//       home: Scaffold( 
-//         appBar: AppBar( 
-//           title: const Text('SWE 463 - Demo 1'), 
-//         ), 
-//         drawer: const Drawer( 
-//           child: SafeArea( 
-//             child: ListTile( 
-//               leading: Icon(Icons.home), 
-//               title: Text('Home'), 
-//             ), 
-//           ), 
-//         ), 
-//         body: const Center( 
-//           child: Text( 
-//             'hot reload working', 
-//             style: TextStyle(fontSize: 24), 
-//           ), 
-//         ), 
-//       ), 
-//     ); 
-//   } 
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(const MyApp());
+// }
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//     @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: const Text('SWE 463 - Demo 1'),
+//         ),
+//         drawer: const Drawer(
+//           child: SafeArea(
+//             child: ListTile(
+//               leading: Icon(Icons.home),
+//               title: Text('Home'),
+//             ),
+//           ),
+//         ),
+//         body: const Center(
+//           child: Text(
+//             'hot reload working',
+//             style: TextStyle(fontSize: 24),
+//           ),
+//         ),
+//       ),
+//     );
+//   }
 // }
 
 // ==================== CHECKPOINT 5 - COMMENTED ====================
-// import 'package:flutter/material.dart'; 
- 
-// void main() { 
-//   runApp(const MyApp()); 
-// } 
-// class MyApp extends StatelessWidget { 
-//   const MyApp({super.key}); 
- 
-//   @override 
-//   Widget build(BuildContext context) { 
-//     return MaterialApp( 
-//       debugShowCheckedModeBanner: false, 
-//       title: 'SWE 463 Demo 1', 
-//       home: const HomePage(), 
-//     ); 
-//   } 
-// } 
- 
-// class HomePage extends StatelessWidget { 
-//   const HomePage({super.key}); 
- 
-//   @override 
-//   Widget build(BuildContext context) { 
-//     return Scaffold( 
-//       appBar: AppBar( 
-//         title: const Text('Home Page'), 
-//       ), 
-//       body: const Center( 
-//         child: Text( 
-//           'This is the Home Page', 
-//           style: TextStyle(fontSize: 24), 
-//         ), 
-//       ), 
-//     ); 
-//   } 
-// } 
- 
-// class LoginPage extends StatelessWidget { 
-//   const LoginPage({super.key}); 
- 
-//   @override 
-//   Widget build(BuildContext context) { 
-//     return Scaffold( 
-//       appBar: AppBar( 
-//         title: const Text('Login Page'), 
-//       ), 
-//       body: const Center( 
-//         child: Text( 
-//           'This is the Login Page', 
-//           style: TextStyle(fontSize: 24), 
-//         ), 
-//       ), 
-//     ); 
-//   } 
-// } 
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(const MyApp());
+// }
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: 'SWE 463 Demo 1',
+//       home: const HomePage(),
+//     );
+//   }
+// }
+
+// class HomePage extends StatelessWidget {
+//   const HomePage({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('Home Page'),
+//       ),
+//       body: const Center(
+//         child: Text(
+//           'This is the Home Page',
+//           style: TextStyle(fontSize: 24),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+// class LoginPage extends StatelessWidget {
+//   const LoginPage({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('Login Page'),
+//       ),
+//       body: const Center(
+//         child: Text(
+//           'This is the Login Page',
+//           style: TextStyle(fontSize: 24),
+//         ),
+//       ),
+//     );
+//   }
+// }
 
 // // ==================== CHECKPOINT 6 - COMMENTED ====================
+import 'package:flutter/material.dart';
 
-import 'package:flutter/material.dart'; 
- 
-void main() { 
-  runApp( 
-    MaterialApp( 
-      home: HomePage(), 
-    ), 
-  ); 
-} 
- 
-class HomePage extends StatelessWidget { 
-  @override 
-  Widget build(BuildContext context) { 
-    return Scaffold( 
-      body: Center( 
-        child: ElevatedButton( 
-          child: Text('Go to Login'), 
-          onPressed: () { 
-            Navigator.push( 
-              context, 
-              MaterialPageRoute( 
-                builder: (context) => LoginPage(), 
-              ), 
-            ); 
-          }, 
-        ), 
-              ), 
-    ); 
-  } 
-} 
- 
-class LoginPage extends StatelessWidget { 
-  @override 
-  Widget build(BuildContext context) { 
-    return Scaffold( 
-      body: Center( 
-        child: ElevatedButton( 
-          child: Text('Go to home'), 
-          onPressed: () { 
-            Navigator.push( 
-              context, 
-              MaterialPageRoute( 
-                builder: (context) => HomePage(), 
-              ), 
-            ); 
-          }, 
-        ), 
-      ), 
-    ); 
-  } 
+void main() {
+  runApp(
+    const MaterialApp(
+      home: HomePage(),
+    ),
+  );
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const LoginPage(),
+              ),
+            );
+          },
+          child: const Text('Go to Login'),
+        ),
+      ),
+    );
+  }
+}
+
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const HomePage(),
+              ),
+            );
+          },
+          child: const Text('Go to home'),
+        ),
+      ),
+    );
+  }
 }
