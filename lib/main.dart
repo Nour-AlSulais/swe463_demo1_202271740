@@ -164,11 +164,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    const MaterialApp(
-      home: HomePage(),
-    ),
-  );
+  runApp(const MaterialApp(home: HomePage()));
 }
 
 class HomePage extends StatelessWidget {
@@ -182,9 +178,7 @@ class HomePage extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(
-                builder: (context) => const LoginPage(),
-              ),
+              MaterialPageRoute(builder: (context) => const LoginPage()),
             );
           },
           child: const Text('Go to Login'),
@@ -205,9 +199,7 @@ class LoginPage extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(
-                builder: (context) => const HomePage(),
-              ),
+              MaterialPageRoute(builder: (context) => const HomePage()),
             );
           },
           child: const Text('Go to home'),
